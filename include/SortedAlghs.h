@@ -73,7 +73,7 @@ namespace Sorted
 		double factor = 1.247;
 		float gapFactor = length / factor;
 		bool swapped = true;
-		while (gapFactor >= 1) {
+		while (gapFactor >= 1 || swapped) {
 			swapped = false;
 			size_t gap = int(gapFactor);
 			for (int i = 0; i < length - gap; i++) {
